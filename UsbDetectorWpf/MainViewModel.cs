@@ -13,7 +13,7 @@ namespace UsbDetectorWpf
     public class MainViewModel
     {
 
-        public ICommand Command { get; }=new Command();
+        //public ICommand Command { get; }=new Command();
 
 
     }

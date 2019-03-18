@@ -9,14 +9,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
-        <local:Converter x:Key="Converter"></local:Converter>
+        <local:Command x:Key="Command"></local:Command>
     </Window.Resources>
     <Window.DataContext>
         <local:MainViewModel></local:MainViewModel>
     </Window.DataContext>
 
     <e:Interaction.Behaviors>
-        <local:DeviceChangeBehavior  Command="{Binding Command}"></local:DeviceChangeBehavior>
+        <local:DeviceChangeBehavior  Command="{StaticResource Command}"></local:DeviceChangeBehavior>
     </e:Interaction.Behaviors>
 
 </Window>
